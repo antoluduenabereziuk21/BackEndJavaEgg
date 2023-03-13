@@ -4,7 +4,6 @@
  <center>
   <h3>Este repositorio alojara el avance diario 💻 de las clases de Egg 🥚</h3>
  </center>
-## Este repositorio alojara el avance diario 💻 de las clases de Egg 🥚!
 <p align="center">
   <picture >
     <source media="(prefers-color-scheme: dark)" srcset="https://vincularlatam.com/zipsydro/Logo-EGG.png" >
