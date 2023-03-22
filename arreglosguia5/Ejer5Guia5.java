@@ -1,17 +1,21 @@
-
-import java.util.Scanner;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+package arreglosguia5;
+
+import java.util.Scanner;
 
 /**
  *
  * @author antolube20
+ * Realice un programa que compruebe si una matriz dada es
+ * antisimétrica. Se dice que una matriz A es antisimétrica cuando ésta es igual
+ * a su propia traspuesta, pero cambiada de signo. Es decir, A es antisimétrica
+ * si A = -AT. La matriz traspuesta de una matriz A se denota por AT y se
+ * obtiene cambiando sus filas por columnas (o viceversa
  */
 public class Ejer5Guia5 {
-
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         System.out.println("INGRESE EL TAMAÑO DE LA MATRIZ CUADRADA");
@@ -21,7 +25,7 @@ public class Ejer5Guia5 {
 
         System.out.println("-------------------");
 
-        generadorMatrizT(dim, matriz);
+        generadorMatrizAT(dim, matriz);
 
     }
 
@@ -37,11 +41,11 @@ public class Ejer5Guia5 {
         return matriz;
     }
 
-    public static int[][] generadorMatrizT(int dim, int[][] matriz) {
+    public static int[][] generadorMatrizAT(int dim, int[][] matriz) {
         int[][] traspuesta = new int[dim][dim];
         for (int f = 0; f < traspuesta.length; f++) {
             for (int c = 0; c < traspuesta.length; c++) {
-                traspuesta[f][c] = matriz[c][f];
+                traspuesta[f][c] = (matriz[c][f] * -1);
                 System.out.print("[" + traspuesta[f][c] + "]");
             }
             System.out.println("");
@@ -49,4 +53,3 @@ public class Ejer5Guia5 {
         return traspuesta;
     }
 }
-
